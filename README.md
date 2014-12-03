@@ -1,4 +1,4 @@
 -Casa-do-C-digo-Ruby
 ====================
 
-Projeto em ruby da casa do código
+Projeto em ruby do livro da casa do código
