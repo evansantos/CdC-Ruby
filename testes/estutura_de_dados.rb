@@ -1,4 +1,4 @@
-#array
+# array
 numeros = [1,2,3]
 
 puts numeros.class # => array
@@ -10,7 +10,25 @@ puts numeros[2] # => 3
 puts numeros.first # => 1
 puts numeros.last # => 3
 
-#seta valor se a valor da variavel é nil
+# adicionar novos elementos a um array
+numeros << 4
+puts numeros
+
+# criação array de string
+palavras = ['ola', 'mundo']
+p palavras # => ['ola', "mundo"]
+
+
+# criação de array baseado em espaço
+palavras = %w{ola mundo}
+p palavras # => ["ola", "mundo"]
+
+# criação de array baseado em espaço, usando interpolação
+nome = "Lucas"
+palavras = %W{ola #{nome}}
+p palavras # => ["ola", "Lucas"]
+
+# seta valor se a valor da variavel é nil
 idade = nil
 
 idade ||= 27
@@ -31,3 +49,7 @@ numero_sem_repeticao = Set.new [1,2,2,3,2,1]
 for numero in numero_sem_repeticao do
   p numero
 end
+
+# => 1
+# => 2
+# => 3
