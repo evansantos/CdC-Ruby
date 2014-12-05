@@ -11,10 +11,15 @@ web_design_responsivo = Livro.new "Tarcio Zemel", "123454", 189, 70.9, :web_desi
 #hash = {:teste => [teste_e_design], :web_design => [web_design_responsivo]}
 
 livros = Set.new [teste_e_design, web_design_responsivo]
+#Conforme estava implementado utilizando o hash
+hash = Hash.new
 for livro in livros do
-  p livro
+  hash[:testes] = livro
 end
 
-#p hash[:testes]
+#Exibe os itens do Set livros
+p livros
+
+p hash[:testes]
 
 #p teste_e_design.hash == web_design_responsivo.hash
