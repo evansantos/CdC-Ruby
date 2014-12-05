@@ -20,6 +20,8 @@ end
 #Exibe os itens do Set livros
 p livros
 
+#Imprimindo com o hash corrigido, o erro que ocorria antes era por que o hash não tinha sido declarado e por padrão ele entendi que era um
+#objeto do tipo fix num
 p hash[:testes]
 
 #p teste_e_design.hash == web_design_responsivo.hash
